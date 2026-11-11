@@ -1,0 +1,58 @@
+
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.reset {
+    background-color: gray;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Registration Form</h1>
+
+    <form id="regForm">
+
+        <h3>Personal Information</h3>
+
+        <label>Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label>Student ID / LRN:</label>
+        <input type="text" id="lrn" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" id="mobile" maxlength="11" required>
+
+        <label>Institutional Email:</label>
+        <input type="email" id="schoolEmail" required>
+
+        <label>Personal Email:</label>
+        <input type="email" id="personalEmail" required>
+
+        <label>Password:</label>
+        <input type="password" id="password" required>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+
+
+        <h3>Academic Information</h3>
+
+        <label>Degree Program:</label>
+        <select id="program" required>
+            <option value="">Select Program</option>
+            <option>BS Information Technology</option>
+            <option>BS Computer Science</option>
+            <option>BS Nursing</option>
+            <option>BS Education</option>
+        </select>
+
+        <label>Year Level:</label>
+        <select id="year" required>
+            <option value="">Select Year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+
+        <label>Enrollment Status:</label>
+        <select id="status" required>
+            <option value="">Select Status</option>
+            <option>Regular</option>
+            <option>Irregular</option>
+        </select>
+
+        <label>Units to Enroll:</label>
+        <input type="number" id="units" min="3" max="24" required>
+
+        <label>GPA / GWA:</label>
+        <input type="number" id="gwa" min="1" max="5" step="0.01" required>
+
+        <label>Laboratory Courses:</label>
+        <input type="checkbox" name="lab" value="Computer Lab"> Computer Lab
+        <input type="checkbox" name="lab" value="Physics Lab"> Physics Lab
+        <input type="checkbox" name="lab" value="Chemistry Lab"> Chemistry Lab
+
+
+        <h3>Emergency Contact</h3>
+
+        <label>Contact Name:</label>
+        <input type="text" id="ecName" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" id="ecPhone" maxlength="11" required>
+
+
+        <h3>Documents and Statement</h3>
+
+        <label>Upload Photo or Proof of Grades:</label>
+        <input type="file" id="file" accept=".png,.jpg,.jpeg,.pdf" required>
+
+        <label>Extracurricular Background:</label>
+        <textarea id="essay" rows="4" required></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="terms" required>
+        I agree to the university terms and honor code.
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
